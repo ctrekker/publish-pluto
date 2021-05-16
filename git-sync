@@ -49,8 +49,10 @@ DEFAULT_AUTOCOMMIT_MSG="changes from $(uname -n) on $(date)"
 print_usage() {
     cat << EOF
 usage: $0 [-h] [-n] [-s] [MODE]
+
 Synchronize the current branch to a remote backup
 MODE may be either "sync" (the default) or "check", to verify that the branch is ready to sync
+
 OPTIONS:
    -h      Show this message
    -n      Commit new files even if branch.\$branch_name.syncNewFiles isn't set
